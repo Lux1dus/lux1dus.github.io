@@ -1,0 +1,49 @@
+---
+title: "DownUnderCTF: discord"
+categories: [DownUnderCTF2025]
+tags: [beginner, misc, easy, DUCTF2025]
+render_with_liquid: false
+media_subpath: /images/ductf2025_discord/
+image:
+  path: DUCTF2025.png
+---
+
+## Room recap:
+**Discord** was a relatively easy and straightforward challenge. I believe its main purpose was to help players familiarize themselves with the flag format used in DUCTF2025. To solve it, all you had to do was find the correct chatroom on the official DownUnderCTF 2025 Discord server—and boom, flag secured.
+
+### Room link:
+[![DownUnderCTF Room Link](discord_room_dark.png){: width="1000" height="1000" .shadow}](https://2025.duc.tf/challenges?c=discord){: .center }
+
+## Key Takeaways
+
+🧠 Got familiar with the flag format used in DUCTF2025
+
+🔍 Learned how to use Discord’s search functionality
+
+💯 Earned an easy 100 points to kick things off — smooth start!
+
+## Ight. Let's do this!
+
+First, with the hint suggesting that the flag is hidden somewhere in DUCTF's Discord server, the first step was to find the link to that server.
+
+After jumping between different tabs on the CTF website, I finally located the Discord invite link right on the homepage when first accessing the platform.
+
+![User Flag](DUCTF_homepage.png){: width="500" height="500" .shadow}
+
+After joining the server via the given link, I was greeted with a wide range of chat channels inside.
+
+![User Flag](room_lists.png){: width="300" height="500"}
+
+I then tried using Discord’s search function to hunt down the flag, hoping someone had leaked or mentioned it somewhere… but sadly, nothing useful turned up.
+
+Eventually, I gave up on searching and decided to go full *ooga-booga* mode—manually clicking through each channel one by one. And voilà!
+The flag was hiding in plain sight, tucked away in the **#sponsors** channel as an image.
+
+![User Flag](room_flag.png){: width="1000" height="7000"}
+
+## Thoughts?
+
+Nothing much to talk about besides im really happy to solve this easy ahh room ☠️ This is my first ever real CTF flag and I’m gonna frame it like a diploma 😭💪
+Feeling like a cyber baby who just took their first steps. 👶🖥️🍼
+
+*~googoogaga~*
