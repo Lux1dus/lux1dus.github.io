@@ -34,7 +34,7 @@ Upon launching the challenge, we land on a fairly simple web page:
 ![Philtered page](index_plain.png){: width="800" height="800" .shadow}
 
 After clicking around and inspecting every button on the page, nothing immediately stood out. 
-But one thing that caught my eye was the way the site handled file inclusion—it seemed like it might be dynamically using PHP’s include or require. 
+But one thing that caught my eye was the way the site handled file inclusion, it seemed like it might be dynamically using PHP’s include or require. 
 
 ![Philtered page](index_page.png){: width="800" height="800" .shadow}
 
@@ -138,7 +138,8 @@ This function checks if the input contains blacklisted terms. If it does, it blo
 #### *assign_props()* 
 This one is dangerous.
 
-It takes values from $_GET and blindly assigns them to the *internal $config object*. This is **the core of the mass assignment issue**—it allows an attacker to override sensitive internal configuration like:
+It takes values from $_GET and blindly assigns them to the *internal $config object*. This is **the core of the mass assignment issue**.
+It allows an attacker to override sensitive internal configuration like:
 - data_folder
 - path
 And there's zero filtering or validation on these values.
@@ -155,7 +156,7 @@ https://web-philtered-0a2005e5b9bf.2025.ductf.net/?allow_unsafe=true&config[data
 > The "config[data_folder]" should not be assigned any value. since the default folder was /data and we know that the flag WAS NOT in /data.
 {: .prompt-tip }
 
-And boom—it works! We’re reading /etc/passwd.
+And it works! We’re reading /etc/passwd.
 
 ![Philtered page](etcpasswd.png){: width="800" height="800" .shadow}
 
